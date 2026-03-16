@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 320px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  color: #1a1a2e;
+  background: #f5f7fa;
+}
+
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+/* Warning banner */
+.warning {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 11.5px;
+  color: #7a5200;
+  line-height: 1.5;
+}
+
+/* Key section */
+.key-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 12px;
+  color: #333;
+}
+
+.key-input-row {
+  display: flex;
+  gap: 6px;
+}
+
+input[type="password"],
+input[type="text"] {
+  flex: 1;
+  padding: 7px 10px;
+  border: 1px solid #ccd;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: monospace;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #5a7bd8;
+}
+
+button {
+  padding: 7px 12px;
+  border: 1px solid #ccd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+button:hover {
+  background: #eef1fb;
+  border-color: #5a7bd8;
+}
+
+.key-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: #666;
+}
+
+.key-warning {
+  color: #c0392b;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+}
+
+.button-row button {
+  flex: 1;
+}
+
+.gen-size-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+.gen-size-row input[type="number"] {
+  width: 64px;
+  padding: 5px 8px;
+  border: 1px solid #ccd;
+  border-radius: 6px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.save-btn {
+  width: 100%;
+  padding: 9px;
+  background: #5a7bd8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.save-btn:hover {
+  background: #3d5fc0;
+}
+
+.save-status {
+  text-align: center;
+  color: #27ae60;
+  font-weight: 600;
+  font-size: 12px;
+}

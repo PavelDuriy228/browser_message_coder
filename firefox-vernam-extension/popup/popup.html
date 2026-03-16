@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vernam Cipher</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="logo">🔐</span>
+      <h1>Vernam Cipher</h1>
+    </header>
+
+    <div class="warning">
+      ⚠️ OTP is only perfectly secure when the key is truly random, used <strong>only once</strong>,
+      and at least as long as the message.
+    </div>
+
+    <section class="key-section">
+      <label for="keyInput">Encryption Key</label>
+      <div class="key-input-row">
+        <input id="keyInput" type="password" placeholder="Enter or generate a key…" autocomplete="off" />
+        <button id="toggleShow" title="Show/hide key">👁</button>
+      </div>
+      <div class="key-meta">
+        <span id="keyLength">Length: 0 chars</span>
+        <span id="keyWarning" class="key-warning hidden">Key is very short!</span>
+      </div>
+
+      <div class="button-row">
+        <button id="generateBtn">⚡ Generate key</button>
+        <button id="copyBtn">📋 Copy</button>
+      </div>
+
+      <div class="gen-size-row">
+        <label for="genSize">Key size:</label>
+        <input id="genSize" type="number" value="256" min="16" max="4096" />
+        <span>chars</span>
+      </div>
+
+      <button id="saveBtn" class="save-btn">💾 Save key</button>
+      <div id="saveStatus" class="save-status hidden">✔ Key saved</div>
+    </section>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
